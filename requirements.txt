@@ -1,0 +1,11 @@
+crewai
+pandas
+openpyxl
+schedule
+langchain
+openai
+python-dotenv
+langchain-community
+smtplib
+sendgrid
+streamlit

@@ -1,0 +1,4 @@
+EmployeeID,JoinDate,Department,Location,Age,Gender,Education,ExperienceYears,IsRemote,HasMentorAssigned,HasManagerMeetingScheduled,HRIntroCompleted,DeviceDeliveredOnTime,LoggedInFirstWeek,AttendedWelcomeSession,TotalDaysActive,Email,Name
+EMP1161,02-08-2025,Product,US,48,Male,Bachelors,10,1,1,1,1,1,1,1,26,md.zeeshan.arif@datarobot.com,Zeeshan
+EMP1162,15-08-2025,Sales,UK,46,Male,Bachelors,8,0,0,1,1,1,1,1,13,iamarifzeeshan@gmail.com,Deepak
+EMP1093,20-08-2025,Finance,India,25,Male,Masters,13,0,0,1,1,0,0,1,8,zeeshanarif097@gmail.com,Amit
