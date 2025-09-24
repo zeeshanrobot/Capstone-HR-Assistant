@@ -1,4 +1,4 @@
-# 🤖 Capstone Project – HR Assistant Application
+# HR Assistant Application
 
 This project is an **Agentic AI-powered HR Assistant** that automates HR onboarding workflows.  
 It integrates **DataRobot predictive modeling, Azure OpenAI GPT-4o, CrewAI agents, and SendGrid** to provide a complete HR automation system.
@@ -27,25 +27,23 @@ It integrates **DataRobot predictive modeling, Azure OpenAI GPT-4o, CrewAI agent
 ## 📂 Project Structure
 ```
 Capstone-HR-Assistant/
-│── main.py                  # Orchestrator – runs agents and workflow
-│── app.py                   # Streamlit entry point
-│── rag_chatbot_app.py       # RAG-powered chatbot (Streamlit)
-│── requirements.txt         # Dependencies
-│── .env.example             # Example environment variables (no secrets)
+│── main.py                  # -----------------------------Orchestrator – runs agents and workflow
+│── rag_chatbot_app.py       # ------------------------------RAG-powered chatbot (Streamlit)
+│── requirements.txt         # ------------------------------Dependencies
+│── .env.example             # -------------------------------Example environment variables
 │
-│── agents/                  # CrewAI agents
-│   ├── hr_agent.py          # HR Agent (onboarding emails – Azure GPT-4o)
-│   ├── alert_agent.py       # Alert Agent (HR risk alerts)
-│   ├── feedback_agent.py    # Feedback Agent (feedback collection)
+│── agents/                  # --------------------------------CrewAI agents
+│   ├── hr_agent.py          # --------------------------------HR Agent (onboarding emails)
+│   ├── alert_agent.py       # ---------------------------------Alert Agent (HR risk alerts)
+│   ├── feedback_agent.py    # ---------------------------------Feedback Agent (feedback collection in google form)
 │
-│── utils/                   # Utility functions
-│   ├── churn_predictor.py   # Calls DataRobot predictive model
-│   ├── emailer.py           # Handles SendGrid email delivery
+│── utils/                   
+│   ├── churn_predictor.py   # ---------------------------------Calls DataRobot predictive model to predict churn of new employees
+│   ├── emailer.py           # --------------------------------- Handles SendGrid email delivery
 │
-│── data/                    # Input data files
-│   ├── new_joiners.xlsx     # New joiner details
-│   ├── test_data.csv        # Test dataset
-│   ├── course_plan.xlsx     # Onboarding course outline
+│── data/                    # ---------------------------------Input data files
+│   ├── test_data.csv        # ---------------------------Test dataset to which onboarding email will be send
+│   ├── course_plan.xlsx     # ----------------------------Onboarding course outline month wise
 ```
 
 ---
