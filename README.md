@@ -59,18 +59,23 @@ cd Capstone-HR-Assistant
 ### 2. Create Environment File
 Copy `.env.example` → `.env` and add your real secrets:
 
-```bash
-cp .env.example .env
-```
-
 Fill `.env` with:
 ```
+OPENAI_API_KEY=
+OPENAI_API_VERSION=2024-10-21
+OPENAI_API_BASE=https://datarobot-genai-enablement.openai.azure.com/
+OPENAI_API_DEPLOYMENT_ID=gpt-4
+
+TRACKER_LINK=https://docs.google.com/spreadsheets/d/1_EggujojD4pxLV6GFLLfr-O8TBN_vDmvlpT6veKVd-k/edit?usp=sharing
+COURSE_LINK=https://enablement.datarobot.com/
+
 SENDGRID_API_KEY=your-sendgrid-key
+EMAIL_SENDER=xyzf@gmail.com
 HR_TEAM_EMAIL=hr@example.com
-OPENAI_API_KEY=your-azure-openai-key
-COURSE_LINK=https://your-course-link
-TRACKER_LINK=https://your-tracker-link
-CHATBOT_LINK=https://your-chatbot-link
+
+CHURN_DEPLOYMENT_ID=
+FEEDBACK_FORM_LINK=https://docs.google.com/forms/d/1kpLYCBGJt-RUYj5_hhHmT2mjWENThtDbnMm2_6-DCmw/edit#responses
+HR_CHATBOT_LINK=
 ```
 
 ### 3. Install Dependencies
@@ -80,25 +85,28 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### Run Full HR Workflow (agents + predictions + emails)
+
+### Run Chatbot App
+```bash
+streamlit run rag_chatbot_app.py
+```
+- open session environment and click on port 8501
+- Opens a web UI at `http://localhost:8501`  
+- New joiners can chat with the onboarding assistant.  
+---
+
 ```bash
 python main.py
 ```
 - Scores new joiners with churn model.  
 - Sends onboarding emails (low-risk joiners).  
 - Alerts HR about high-risk joiners.  
-- Sends feedback requests.  
+- Sends feedback requests to all the new joiners for the onboarding experience
 
-### Run Chatbot App
-```bash
-streamlit run rag_chatbot_app.py
-```
-- Opens a web UI at `http://localhost:8501`  
-- New joiners can chat with the onboarding assistant.  
 
----
 
 ## 🛡️ Secrets Management
 ⚠️ Never commit `.env` with real keys.  
