@@ -5,7 +5,7 @@ It integrates **DataRobot predictive modeling, Azure OpenAI GPT-4o, CrewAI agent
 
 ---
 
-## ✨ Features
+## Features
 - **Onboarding Automation**  
   - Sends personalized onboarding emails to new joiners.  
 - **Churn Prediction**  
@@ -46,7 +46,14 @@ Capstone-HR-Assistant/
 │   ├── test_data.csv        # ---------------------------Test dataset to which onboarding email will be send
 │   ├── course_plan.xlsx     # ----------------------------Onboarding course outline month wise
 ```
+## API Keys & Setup
+- **SendGrid:** Create API Key → Add to `.env` as `SENDGRID_API_KEY`.
+- **DataRobot:** Use `hr_onboarding_risk_training_data/` to train churn model (target column = `Churned`). Get Deployment ID and add to .env file.
+-  Create GPT-4o mini deployment → Add credentials once deployment is done (`API_UL`, `API_KEY`, `DATAROBOT_KEY`, `DEPLOYMENT_ID`) to `.env`.
 
+## Additional Folders
+- **Churn Model Training Data/** → Historical dataset for churn model training (target = `churned`).
+- **DataRobot_Policy_VDB_RAG/** → Policy documents used for creating vector database for chatbot (RAG).
 ---
 
 ## ⚙️ Setup Instructions
@@ -116,7 +123,7 @@ python main.py
 
 ---
 
-## 🧠 Models & AI Used
+## Models & AI Used
 - **DataRobot Churn Prediction Model**  
   - Classification model deployed in DataRobot.  
   - Predicts risk of employee churn.  
