@@ -9,3 +9,4 @@ langchain-community
 smtplib
 sendgrid
 streamlit
+datarobot
