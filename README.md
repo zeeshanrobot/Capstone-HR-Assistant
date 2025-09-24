@@ -24,6 +24,7 @@ It integrates **DataRobot predictive modeling, Azure OpenAI GPT-4o, CrewAI agent
 
 ---
 
+
 ## 📂 Project Structure
 ```
 Capstone-HR-Assistant/
