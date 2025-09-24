@@ -76,6 +76,13 @@ HR_TEAM_EMAIL=hr@example.com
 CHURN_DEPLOYMENT_ID=
 FEEDBACK_FORM_LINK=https://docs.google.com/forms/d/1kpLYCBGJt-RUYj5_hhHmT2mjWENThtDbnMm2_6-DCmw/edit#responses
 HR_CHATBOT_LINK=
+
+## Text Generation LLM Model ------------- keys:
+
+API_URL=   # noqa
+API_KEY=
+DATAROBOT_KEY=
+DEPLOYMENT_ID=
 ```
 
 ### 3. Install Dependencies
@@ -106,27 +113,6 @@ python main.py
 - Alerts HR about high-risk joiners.  
 - Sends feedback requests to all the new joiners for the onboarding experience
 
-
-
-## 🛡️ Secrets Management
-⚠️ Never commit `.env` with real keys.  
-Instead:
-- Use `.env` locally (not tracked in Git).  
-- Store secrets in GitHub → **Settings → Secrets and Variables → Actions**.  
-
----
-
-## 🤝 GitHub Actions Workflow
-This repo includes `.github/workflows/ci.yml`:
-- Runs on every push.  
-- Can be triggered manually.  
-- Runs monthly (1st of each month) to onboard new joiners automatically.  
-
-Secrets required in GitHub Actions:
-- `SENDGRID_API_KEY`  
-- `HR_TEAM_EMAIL`  
-- `OPENAI_API_KEY`  
-
 ---
 
 ## 🧠 Models & AI Used
@@ -141,16 +127,6 @@ Secrets required in GitHub Actions:
   - Powers CrewAI agent reasoning and task execution logs.  
 
 ---
-
-## 👨‍💻 For Developers
-- Fork/clone the repo.  
-- Add `.env` from `.env.example`.  
-- Run `python main.py` to test locally.  
-- To contribute:
-  - Create a new branch  
-  - Make changes  
-  - Open a pull request  
-
 ---
 
 ## 📌 Summary
