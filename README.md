@@ -2,7 +2,8 @@
 
 This project is an **Agentic AI-powered HR Assistant** that automates HR onboarding workflows.  
 It integrates **DataRobot predictive modeling, Azure OpenAI GPT-4o, CrewAI agents, and SendGrid** to provide a complete HR automation system.
-Document link - https://docs.google.com/document/d/1ilwBKPlnHCCku3SYqvcc574E9l27lF-BHWuC57jDKhE/edit?tab=t.wsseyd30gkh1
+
+- Document link - https://docs.google.com/document/d/1ilwBKPlnHCCku3SYqvcc574E9l27lF-BHWuC57jDKhE/edit?tab=t.wsseyd30gkh1
 
 
 # The Problem
