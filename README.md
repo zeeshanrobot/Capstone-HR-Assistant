@@ -72,7 +72,7 @@ Capstone-HR-Assistant/
 ### 1. Clone the Repo
 ```bash
 git clone https://github.com/zeeshanrobot/Capstone-Project-HR-Assistant.git
-cd Capstone-HR-Assistant
+cd Capstone-Project-HR-Assistant
 ```
 
 ### 2. Create Environment File
